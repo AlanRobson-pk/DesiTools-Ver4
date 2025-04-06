@@ -12,6 +12,11 @@
   <!-- Dark/Light Mode Toggle -->
   <header class="header">
     <h1>Desi Developers</h1>
+    <nav class="nav-tabs">
+      <a href="#featuredTools">Featured Tools</a>
+      <a href="#categories">Categories</a>
+      <a href="#resources">Resources</a>
+    </nav>
     <button id="modeToggle">Toggle Mode</button>
   </header>
 
@@ -38,24 +43,36 @@
   </section>
 
   <!-- Featured Tools Section -->
-  <section class="featured-tools">
+  <section class="featured-tools" id="featuredTools">
     <h3>Featured AI Tools</h3>
-    <div class="tool-grid" id="featuredTools">
-      <!-- Sample Tool Card -->
+    <div class="tool-grid">
+      <!-- Sample Tool Card (Grammarly) -->
       <div class="tool-card">
-        <img src="images/grammarly.png" alt="Grammarly Logo" />
+        <img src="images/grammarly.png" alt="Grammarly Logo" onerror="this.src='images/placeholder.png'" />
         <h4>Grammarly</h4>
         <p>Advanced writing assistant for error-free content.</p>
         <span class="badge free">Free</span>
         <div class="tags">Text & Writing</div>
         <a href="https://www.grammarly.com" target="_blank">Visit Website</a>
       </div>
-      <!-- Add more cards here dynamically -->
+
+      <!-- Example: Looka -->
+      <div class="tool-card">
+        <img src="images/looka.png" alt="Looka Logo" onerror="this.src='images/placeholder.png'" />
+        <h4>Looka</h4>
+        <p>AI-powered logo and brand identity maker.</p>
+        <span class="badge paid">Paid</span>
+        <div class="tags">Image Generation</div>
+        <a href="https://www.looka.com" target="_blank">Visit Website</a>
+      </div>
+
+      <!-- Add additional tools similarly -->
+      <!-- MidJourney, Speechma, InVideo, Canva, Ideogram, Sora, ElevenLabs... -->
     </div>
   </section>
 
   <!-- Browse by Category Section -->
-  <section class="categories">
+  <section class="categories" id="categories">
     <h3>Browse by Category</h3>
     <div class="category-grid">
       <div class="category-card">Text & Writing</div>
@@ -68,7 +85,7 @@
   </section>
 
   <!-- Help Us Help You Section -->
-  <section class="resources">
+  <section class="resources" id="resources">
     <h3>Help Us Help You</h3>
     <div class="resource-grid">
       <div class="resource-card">
@@ -87,9 +104,15 @@
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- Footer CTA & Info -->
   <footer class="footer">
     <button id="submitToolBtn">Submit a Tool</button>
+    <div class="footer-links">
+      <a href="#">Blog/Resources</a>
+      <a href="#">About/FAQ</a>
+      <a href="mailto:contact@desidevelopers.com">Contact Us</a>
+    </div>
+    <p>© 2025 All rights reserved by HELMSTRAT</p>
   </footer>
 
   <script src="scripts.js"></script>
